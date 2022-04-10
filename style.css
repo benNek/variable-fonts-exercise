@@ -1,12 +1,22 @@
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
   --color-gray-100: hsl(270deg 25% 96%);
   --color-gray-300: hsl(270deg 17% 84%);
   --color-gray-500: hsl(270deg 17% 72%);
   --color-gray-700: hsl(270deg 12% 58%);
   --color-gray-900: hsl(270deg 22% 12%);
   --color-gray-1000: hsl(270deg 20% 8%);
+  -webkit-font-smoothing: antialiased;
+  --weight-thin: 00;
+  --weight-extra-light: 200;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semi-bold: 600;
+  --weight-bold: 700;
+  --weight-extra-bold: 800;
+  --weight-black: 900;
 }
 
 html,
@@ -42,7 +52,19 @@ footer {
 
 .logo {
   font-size: 2rem;
+  font-weight: var(--weight-black);
   margin-bottom: 16px;
+}
+
+.sublogo {
+  font-weight: var(--weight-medium);
+  font-style: italic;
+  color: var(--color-gray-500);
+}
+
+.person-name {
+  font-weight: var(--weight-bold);
+  color: var(--color-gray-300);
 }
 
 .legal {
@@ -58,10 +80,18 @@ footer {
   margin-bottom: 24px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  font-weight: var(--weight-bold);
+  font-size: 1.2rem;
+  color: var(--color-gray-700);
 }
 
 .links li {
   margin: 16px 0;
+
+  font-weight: var(--weight-medium);
+  font-size: 1rem;
+  color: var(--color-gray-100);
 }
 
 .links li:last-of-type {
@@ -70,6 +100,7 @@ footer {
 
 .links a {
   text-decoration: none;
+  color: inherit;
 }
 
 main {
